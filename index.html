@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pemanggilan Antrian Peserta</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header dengan logo dan nama perusahaan -->
+  <header>
+    <img src="asset/logo smk.png" alt="Logo" class="logo">
+    <h1 class="nama-perusahaan">PT Aqilah Hidayah Syariah</h1>
+    <button id="fullscreenBtn">⛶ Fullscreen</button>
+  </header>
+
+  <div class="container">
+    <!-- Bagian Antrian -->
+    <div class="antrian">
+      <h2>Nomor Antrian Dipanggil</h2>
+
+      <div class="layanan-box">
+        <h3>Customer Service</h3>
+        <div id="cs-antrian">CS001</div>
+        <button onclick="nextAntrian('cs')">Panggil Berikutnya</button>
+      </div>
+
+      <div class="layanan-box">
+        <h3>Pembayaran</h3>
+        <div id="pay-antrian">P001</div>
+        <button onclick="nextAntrian('pay')">Panggil Berikutnya</button>
+      </div>
+
+      <div class="layanan-box">
+        <h3>Pengambilan Produk</h3>
+        <div id="prod-antrian">PR001</div>
+        <button onclick="nextAntrian('prod')">Panggil Berikutnya</button>
+      </div>
+    </div>
+
+    <!-- Bagian Video Promosi -->
+    <div class="video-box">
+      <video id="videoPromosi" autoplay muted loop>
+        <source src="asset/sampai jumpa smp 2025.mp4" type="video/mp4">
+        Browser anda tidak mendukung video.
+      </video>
+    </div>
+  </div>
+
+  <!-- Suara Panggilan -->
+  <audio id="audioPanggilan"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>

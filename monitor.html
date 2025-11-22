@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layar Antrian Peserta</title>
+  <link rel="stylesheet" href="monitor.css">
+</head>
+<body>
+  <header>
+    <img src="asset/logo smk.png" alt="Logo" class="logo">
+    <h1>PT Aqilah Hidayah Syariah</h1>
+    <button class="fullscreen-btn" onclick="toggleFullscreen()">⛶</button>
+  </header>
+
+  <div class="container">
+    <!-- Bagian Antrian -->
+    <div class="antrian-display">
+      <h2>Nomor Antrian</h2>
+      <div class="antrian-box">
+        <span id="jenisLayanan">---</span>
+        <h1 id="nomorAntrian">000</h1>
+      </div>
+    </div>
+
+    <!-- Bagian Video Promosi -->
+    <div class="video-display">
+      <video autoplay muted loop>
+        <source src="asset/sampai jumpa smp 2025.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+
+  <!-- Suara bel -->
+  <audio id="bellSound" src="asset/house_doorbell-393892.mp3" preload="auto"></audio>
+
+  <script src="monitor.js"></script>
+</body>
+</html>

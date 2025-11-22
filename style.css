@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background: #f8f9fa;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Header */
+  header {
+    position: relative;
+    text-align: center;
+    background: #1d3557;
+    color: #fff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  header .logo {
+    height: 50px;
+    width: 50px;
+    object-fit: contain;
+  }
+  
+  header .nama-perusahaan {
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+  
+  #fullscreenBtn {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #e63946;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+  
+  #fullscreenBtn:hover {
+    background: #d62828;
+  }
+  
+  /* Container utama */
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    flex: 1;
+    overflow: hidden;
+  }
+  
+  /* Antrian */
+  .antrian {
+    background: linear-gradient(135deg, #457b9d, #1d3557);
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .antrian h2 {
+    margin-bottom: 15px;
+  }
+  
+  .layanan-box {
+    background: #f1faee;
+    color: #1d3557;
+    border-radius: 12px;
+    padding: 15px;
+    margin: 10px 0;
+    text-align: center;
+    width: 80%;
+  }
+  
+  .layanan-box h3 {
+    margin-bottom: 10px;
+  }
+  
+  .layanan-box div {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .layanan-box button {
+    background: #e63946;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .layanan-box button:hover {
+    background: #d62828;
+  }
+  
+  /* Video */
+  .video-box {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .video-box video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
